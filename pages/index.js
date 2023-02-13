@@ -20,14 +20,14 @@ export default function Home({ allPostData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>sha na na na knees knees</p>
+        <p>Develop daily</p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
+        <h2 className={utilStyles.headingLg}>Writings</h2>
         <ul className={utilStyles.list}>
           {allPostData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>{title}</Link>
+              <Link href={`/writings/${id}`}>{title}</Link>
               <br />
               <small className={utilStyles.lightText}>
                 <Date dateString={date} />

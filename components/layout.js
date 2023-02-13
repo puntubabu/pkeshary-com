@@ -14,7 +14,7 @@ export default function Layout({ children, home }) {
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="pradeep keshary website and blog"
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
@@ -24,20 +24,32 @@ export default function Layout({ children, home }) {
           <>
             <Image
               priority
-              src="/images/profile.jpg"
+              src="/images/profile.png"
               className={utilStyles.borderCircle}
               height={144}
               width={144}
               alt={name}
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            <Link
+              target="_blank"
+              href="https://github.com/puntubabu">
+              <Image
+                priority
+                src="/images/github-mark.svg"
+                className={utilStyles.borderCircle}
+                height={25}
+                width={25}
+                alt="github logo"
+              />
+            </Link>
           </>
         ) : (
           <>
             <Link href="/">
               <Image
                 priority
-                src="/images/profile.jpg"
+                src="/images/profile.png"
                 className={utilStyles.borderCircle}
                 height={108}
                 width={108}
